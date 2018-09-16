@@ -1,15 +1,15 @@
 [
  {
     "name"              : "moacstats-client",
-    "cwd"               : "/home/moac/moac-net-intelligence-api/",
+    "cwd"               : "/home/nodemoac/moac-netstats-api/",
     "script"            : "app.js",
     "log_date_format"   : "YYYY-MM-DD HH:mm Z",
-    "log_file"          : "/home/moac/moac-net-intelligence-api/logs/node-app-log.log",
-    "out_file"          : "/home/moac/moac-net-intelligence-api/logs/node-app-out.log",
-    "error_file"        : "/home/moac/moac-net-intelligence-api/logs/node-app-err.log",
+    "log_file"          : "/home/nodemoac/moac-netstats-api/logs/node-app-log.log",
+    "out_file"          : "/home/nodemoac/moac-netstats-api/logs/node-app-out.log",
+    "error_file"        : "/home/nodemoac/moac-netstats-api/logs/node-app-err.log",
     "merge_logs"        : true,
     "watch"             : false,
-    "max_restarts"      : 10,
+    "max_restarts"      : 100,
     "exec_interpreter"  : "node",
     "exec_mode"         : "fork_mode",
     "env":
