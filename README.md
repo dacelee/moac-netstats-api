@@ -2,7 +2,7 @@ MOAC Network Stats API
 ============
 [![Build Status][travis-image]][travis-url] [![dependency status][dep-image]][dep-url]
 
-This is the backend service which runs along with ethereum and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to [moac-netstats](https://github.com/dacelee/moac-netstats) to feed information. For full install instructions please read the [wiki](https://github.com/ethereum/wiki/wiki/Network-Status).
+This is the backend service which runs along with MOAC and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to [moac-netstats](https://github.com/dacelee/moac-netstats) to feed information. For full install instructions please read the [wiki](https://github.com/ethereum/wiki/wiki/Network-Status).
 
 
 ## Prerequisite
@@ -11,12 +11,25 @@ This is the backend service which runs along with ethereum and tracks the networ
 * npm
 
 
-## Installation on an Ubuntu EC2 Instance
+## Installation on MOAC And link to the network（Ubuntu16.0.4 x64）
 
-Fetch and run the build shell. This will install everything you need: latest ethereum - CLI from develop branch (you can choose between eth or geth), node.js, npm & pm2.
+Need MOAC JS-RPC OPEN 
 
 ```bash
-bash <(curl https://raw.githubusercontent.com/cubedro/eth-net-intelligence-api/master/bin/build.sh)
+adduser nodemoac
+adduser nodemoac sudo
+su - nodemoac
+sudo apt-get update
+sudo apt-get install unzip build-essential
+sudo wget https://github.com/MOACChain/moac-core/releases/download/v1.0.2/nuwa-vnode1.0.2.ubuntu.tar.gz
+sudo unzip -x nuwa-vnode1.0.2.ubuntu.tar.gz
+cd nuwa-vnode1.0.2.ubuntu
+chmod 755 moac
+./moac account new   （set up Address）
+screen -S wallet
+./moac --rpc
+
+
 ```
 ## Installation as docker container (optional)
 
