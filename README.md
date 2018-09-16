@@ -76,7 +76,8 @@ sudo mv processes.json /home/nodemoac
 cd ~
 pm2 start processes.json
 ```
-
+##Donations
+MOAC: 0x53be4cb8f27152893b448f9f569624afd1a97e0c
 
 
 [travis-image]: https://travis-ci.org/cubedro/eth-net-intelligence-api.svg
