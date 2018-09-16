@@ -31,10 +31,22 @@ screen -S wallet
 
 
 ```
-## Installation as docker container (optional)
+## Installation Moac-netstats-api
+Install NodeJS through NVM
 
-There is a `Dockerfile` in the root directory of the repository. Please read through the header of said file for
-instructions on how to build/run/setup. Configuration instructions below still apply.
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+source ~/.bashrc
+nvm install v6.9.1
+```
+Install  Moac-netstats-api
+
+```bash
+git clone https://github.com/dacelee/moac-netstats-api
+cd moac-netstats-api
+npm install
+npm install -g pm2
+```
 
 ## Configuration
 
@@ -46,11 +58,11 @@ Configure the app modifying [processes.json](/eth-net-intelligence-api/blob/mast
 		"NODE_ENV"        : "production", // tell the client we're in production environment
 		"RPC_HOST"        : "localhost", // eth JSON-RPC host
 		"RPC_PORT"        : "8545", // eth JSON-RPC port
-		"LISTENING_PORT"  : "30303", // eth listening port (only used for display)
-		"INSTANCE_NAME"   : "", // whatever you wish to name your node
-		"CONTACT_DETAILS" : "", // add your contact details here if you wish (email/skype)
-		"WS_SERVER"       : "wss://rpc.ethstats.net", // path to eth-netstats WebSockets api server
-		"WS_SECRET"       : "see http://forum.ethereum.org/discussion/2112/how-to-add-yourself-to-the-stats-dashboard-its-not-automatic", // WebSockets api server secret used for login
+		"LISTENING_PORT"  : "30333", // eth listening port (only used for display)
+		"INSTANCE_NAME"   : "name your node", // whatever you wish to name your node
+		"CONTACT_DETAILS" : "you eamil", // add your contact details here if you wish (email/skype)
+		"WS_SERVER"       : "ws://stats.moacdev.com", // path to eth-netstats WebSockets api server
+		"WS_SECRET"       : "moacdev.com", // WebSockets api server secret used for login
 		"VERBOSITY"       : 2 // Set the verbosity (0 = silent, 1 = error, warn, 2 = error, warn, info, success, 3 = all logs)
 	}
 ```
@@ -60,19 +72,13 @@ Configure the app modifying [processes.json](/eth-net-intelligence-api/blob/mast
 Run it using pm2:
 
 ```bash
-cd ~/bin
+cd ~/
+cd ~
+curl -O https://gist.githubusercontent.com/lgn21st/530faf0f9f31febc6ec5c4e3f0301dca/raw/92558a5bc42d1b4fab1b12690f4184ce480f01f4/processes.json
 pm2 start processes.json
 ```
 
-## Updating
 
-To update the API client use the following command:
-
-```bash
-~/bin/www/bin/update.sh
-```
-
-It will stop the current netstats client processes, automatically detect your ethereum implementation and version, update it to the latest develop build, update netstats client and reload the processes.
 
 [travis-image]: https://travis-ci.org/cubedro/eth-net-intelligence-api.svg
 [travis-url]: https://travis-ci.org/cubedro/eth-net-intelligence-api
