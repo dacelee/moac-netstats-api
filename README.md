@@ -50,7 +50,7 @@ npm install -g pm2
 
 ## Configuration
 
-Configure the app modifying [processes.json](/eth-net-intelligence-api/blob/master/processes.json). Note that you have to modify the backup processes.json file located in `./bin/processes.json` (to allow you to set your env vars without being rewritten when updating).
+Configure the app modifying [processes.json](https://github.com/dacelee/moac-netstats-api/blob/master/processes.json). Note that you have to modify the backup processes.json file located in `./bin/processes.json` (to allow you to set your env vars without being rewritten when updating).
 
 ```json
 "env":
@@ -72,9 +72,8 @@ Configure the app modifying [processes.json](/eth-net-intelligence-api/blob/mast
 Run it using pm2:
 
 ```bash
-cd ~/
+sudo mv processes.json /home/nodemoac
 cd ~
-curl -O https://gist.githubusercontent.com/lgn21st/530faf0f9f31febc6ec5c4e3f0301dca/raw/92558a5bc42d1b4fab1b12690f4184ce480f01f4/processes.json
 pm2 start processes.json
 ```
 
