@@ -2,7 +2,7 @@ MOAC Network Stats API
 ============
 [![Build Status][travis-image]][travis-url] [![dependency status][dep-image]][dep-url]
 
-This is the backend service which runs along with MOAC and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to [moac-netstats](https://github.com/dacelee/moac-netstats) to feed information. For full install instructions please read the [wiki](https://github.com/ethereum/wiki/wiki/Network-Status).
+This is the backend service which runs along with MOAC and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to [moac-netstats](https://github.com/dacelee/moac-netstats) to feed information. 
 
 
 ## Prerequisite
