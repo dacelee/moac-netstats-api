@@ -1,0 +1,28 @@
+[
+ {
+    "name"              : "moacstats-client",
+    "cwd"               : "/home/moac/moac-net-intelligence-api/",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "log_file"          : "/home/moac/moac-net-intelligence-api/logs/node-app-log.log",
+    "out_file"          : "/home/moac/moac-net-intelligence-api/logs/node-app-out.log",
+    "error_file"        : "/home/moac/moac-net-intelligence-api/logs/node-app-err.log",
+    "merge_logs"        : true,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "localhost",
+      "RPC_PORT"        : "8545",
+      "LISTENING_PORT"  : "30333",
+      "INSTANCE_NAME"   : "moacdev", //<-双引号内填写您的节点名称信息。
+      "CONTACT_DETAILS" : "dayqkl.com", //<-双引号内填写您的联系信息，如网址或邮箱地址。
+      "WS_SERVER"       : "ws://stats.moacdev.com",
+      "WS_SECRET"       : "moacdev.com",
+      "VERBOSITY"       : 2
+    }
+  }
+]
