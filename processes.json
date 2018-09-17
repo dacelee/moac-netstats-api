@@ -18,8 +18,8 @@
       "RPC_HOST"        : "localhost",
       "RPC_PORT"        : "8545",
       "LISTENING_PORT"  : "30333",
-      "INSTANCE_NAME"   : "moacdev", //<-双引号内填写您的节点名称信息。
-      "CONTACT_DETAILS" : "dayqkl.com", //<-双引号内填写您的联系信息，如网址或邮箱地址。
+      "INSTANCE_NAME"   : "you node name", //<-双引号内填写您的节点名称信息。
+      "CONTACT_DETAILS" : "you e-mail", //<-双引号内填写您的联系信息，如网址或邮箱地址。
       "WS_SERVER"       : "ws://stats.moacdev.com",
       "WS_SECRET"       : "moacdev.com",
       "VERBOSITY"       : 2
