@@ -13,7 +13,7 @@ This is the backend service which runs along with MOAC and tracks the network st
 
 ## Installation on MOAC And link to the network（Ubuntu16.0.4 x64）
 
-Need MOAC JS-RPC OPEN 
+Need MOAC and Address
 
 ```bash
 adduser nodemoac
