@@ -26,11 +26,22 @@ sudo unzip -x nuwa-vnode1.0.2.ubuntu.tar.gz
 cd nuwa-vnode1.0.2.ubuntu
 chmod 755 moac
 ./moac account new   （set up Address）
+```
+## SCREEN moac （Ubuntu16.0.4 x64）
+
+OPEN MOAC JS-RPC 
+```bash
+
 screen -S wallet
 ./moac --rpc
 
+ctrl+A+D exit
+netstat -ap | grep 8545 （There are PID and MOAC processes.）
+netstat -ap | grep 30333（There are PID and MOAC processes.）
+OK
 
 ```
+
 ## Installation Moac-netstats-api
 Install NodeJS through NVM
 
