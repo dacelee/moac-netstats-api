@@ -67,12 +67,12 @@ Configure the app modifying [processes.json](https://github.com/dacelee/moac-net
 "env":
 	{
 		"NODE_ENV"        : "production", // tell the client we're in production environment
-		"RPC_HOST"        : "localhost", // eth JSON-RPC host
-		"RPC_PORT"        : "8545", // eth JSON-RPC port
-		"LISTENING_PORT"  : "30333", // eth listening port (only used for display)
+		"RPC_HOST"        : "localhost", // MOAC JSON-RPC host
+		"RPC_PORT"        : "8545", // MOAC JSON-RPC port
+		"LISTENING_PORT"  : "30333", // MOAC listening port (only used for display)
 		"INSTANCE_NAME"   : "name your node", // whatever you wish to name your node
 		"CONTACT_DETAILS" : "you eamil", // add your contact details here if you wish (email/skype)
-		"WS_SERVER"       : "ws://stats.moacdev.com", // path to eth-netstats WebSockets api server
+		"WS_SERVER"       : "ws://stats.moacdev.com", // path to MOAC-netstats WebSockets api server
 		"WS_SECRET"       : "moacdev.com", // WebSockets api server secret used for login
 		"VERBOSITY"       : 2 // Set the verbosity (0 = silent, 1 = error, warn, 2 = error, warn, info, success, 3 = all logs)
 	}
